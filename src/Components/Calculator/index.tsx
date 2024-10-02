@@ -1,12 +1,5 @@
 import { useState } from 'react'
-import {
-  CalculatorContainer,
-  InputGroup,
-  InputsContainer,
-  Result,
-  StyledButton,
-  StyleInput
-} from './styles'
+import * as S from './styles'
 
 const Calculator = () => {
   const [inputs, setInputs] = useState<string[]>(['', '', '', ''])
@@ -27,23 +20,23 @@ const Calculator = () => {
   }
 
   return (
-    <CalculatorContainer>
-      <InputsContainer>
+    <S.CalculatorContainer>
+      <S.InputsContainer>
         {inputs.map((input, index) => (
-          <InputGroup key={index}>
-            <StyleInput
+          <S.InputGroup key={index}>
+            <S.StyleInput
               type="number"
               value={input}
               onChange={(e) => handleInputChange(index, e.target.value)}
               placeholder="Digite um número"
               step="0.01"
             />
-            <Result>Resultado: {results[index]}</Result>
-          </InputGroup>
+            <S.Result>Resultado: {results[index]}</S.Result>
+          </S.InputGroup>
         ))}
-      </InputsContainer>
-      <StyledButton onClick={calculatePercentage}>Calcular</StyledButton>
-    </CalculatorContainer>
+      </S.InputsContainer>
+      <S.StyledButton onClick={calculatePercentage}>Calcular</S.StyledButton>
+    </S.CalculatorContainer>
   )
 }
 
