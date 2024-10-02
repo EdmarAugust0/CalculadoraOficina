@@ -14,7 +14,6 @@ export const GlobalCss = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     color: ${colors.black};
-    overflow: hidden;
   }
 
   .container {
