@@ -11,8 +11,11 @@ export const CalculatorContainer = styled.div`
 `
 export const InputsContainer = styled.div`
   display: flex;
-  flex-direction: column;
   gap: 10px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `
 
 export const InputGroup = styled.div`
