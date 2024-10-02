@@ -7,7 +7,7 @@ export const CalculatorContainer = styled.div`
   align-items: center;
   height: 100%;
   background-color: ${colors.darkGrey};
-  padding: 184px 0;
+  padding: 224px 0;
 `
 export const InputsContainer = styled.div`
   display: flex;
