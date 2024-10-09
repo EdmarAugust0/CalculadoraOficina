@@ -33,6 +33,17 @@ export const StyleInput = styled.input`
 export const Result = styled.p`
   font-size: 24px;
 `
+
+export const ContainerButtons = styled.div`
+  display: flex;
+  gap: 16px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 0;
+  }
+`
+
 export const StyledButton = styled.button`
   margin-top: 16px;
   padding: 8px 16px;

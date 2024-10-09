@@ -2,8 +2,8 @@ import { useState } from 'react'
 import * as S from './styles'
 
 const Calculator = () => {
-  const [inputs, setInputs] = useState<string[]>(['', '', '', ''])
-  const [results, setResults] = useState<number[]>([0, 0, 0, 0])
+  const [inputs, setInputs] = useState<string[]>(['', '', '', '', ''])
+  const [results, setResults] = useState<number[]>([0, 0, 0, 0, 0])
 
   const handleInputChange = (index: number, value: string) => {
     const updateInputs = [...inputs]
@@ -17,6 +17,11 @@ const Calculator = () => {
       return isNaN(num) ? 0 : +(num + num * 0.3).toFixed(2)
     })
     setResults(updateResults)
+  }
+
+  const clear = () => {
+    setInputs(['', '', '', '', ''])
+    setResults([0, 0, 0, 0, 0])
   }
 
   return (
@@ -35,7 +40,10 @@ const Calculator = () => {
           </S.InputGroup>
         ))}
       </S.InputsContainer>
-      <S.StyledButton onClick={calculatePercentage}>Calcular</S.StyledButton>
+      <S.ContainerButtons>
+        <S.StyledButton onClick={calculatePercentage}>Calcular</S.StyledButton>
+        <S.StyledButton onClick={clear}>Limpar</S.StyledButton>
+      </S.ContainerButtons>
     </S.CalculatorContainer>
   )
 }
