@@ -7,7 +7,7 @@ export const CalculatorContainer = styled.div`
   align-items: center;
   height: 100%;
   background-color: ${colors.darkGrey};
-  padding: 224px 0;
+  padding: 216px 0;
 `
 export const InputsContainer = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ export const StyledButton = styled.button`
   border-radius: 8px;
   transition: background-color 0.3s;
 
-  &hover {
+  &:hover {
     background-color: ${colors.red};
   }
 `

@@ -15,10 +15,4 @@ export const GlobalCss = createGlobalStyle`
     box-sizing: border-box;
     color: ${colors.black};
   }
-
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-  }
 `
