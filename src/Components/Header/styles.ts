@@ -4,7 +4,7 @@ import { colors } from '../../styles'
 export const HeaderGeral = styled.div`
   background-color: ${colors.darkRed};
   max-height: 160px;
-  height: 100%;
+  height: 64px;
   text-align: center;
 `
 export const Title = styled.h1`

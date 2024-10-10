@@ -1,17 +1,12 @@
 import React from 'react'
-import './App.css'
 import { GlobalCss } from './styles'
-import Footer from './Components/Footer'
-import Header from './Components/Header'
-import Calculator from './Components/Calculator'
+import Content from './Components/Content'
 
 function App() {
   return (
     <>
       <GlobalCss />
-      <Header />
-      <Calculator />
-      <Footer />
+      <Content />
     </>
   )
 }

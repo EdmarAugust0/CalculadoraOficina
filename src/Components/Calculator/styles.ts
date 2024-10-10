@@ -9,6 +9,7 @@ export const CalculatorContainer = styled.div`
   background-color: ${colors.darkGrey};
   padding: 216px 0;
 `
+
 export const InputsContainer = styled.div`
   display: flex;
   gap: 10px;
